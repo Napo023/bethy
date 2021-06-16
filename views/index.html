@@ -2,38 +2,213 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN :: BETTY CASTILLO</title>
-    
-    <link rel="stylesheet" href="../public/css/estilos-login.css">
-    <link rel="stylesheet" href="../public/css/normalize.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>    
+    <title>BC :: SISTEMA DE REPORTES </title>
+     <!-- LINKS -->
+     <link rel="stylesheet" href="public/css/normalize.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
+     <link rel="stylesheet" href="../public/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../public/css/pagina.css">
+    <link rel="stylesheet" href="public/css/estilos.css">
 </head>
 <body>
-   <div class="log__form">
-    <div class="container">
-        <div class="log__main">
-            
-            <div class="log__content">
-             <h2 class="log__title">INICIAR SESION</h2>
-             <form class="log__form">
-                 <input type="text" name="usuario" id="user" placeholder="usuario" autofocus>
-                 <input type="password" name="password" id="pass" placeholder="contraseña" >
-                 <button class="log__btn" type="submit">Ingresar</button>
-             </form>
-             <p class="log__forgot"><a href="#" class="log__pass"><i class="fas fa-key"></i> Recuperar contraseña</a> </p>
-            
-            </div>
-            
-            <div class="log__content-logo">
-                <img src="../public/img/betty-logo.png" class="log__img" alt="">
-            </div>
-        </div>
-    </div>
-   </div>
+  <div class="container-xxl">
 
-  
+          <div class="row">
+            <!-- INICIO SIDEBAR -->
+              <div class="sidebar col-sm-12 col-12 col-md-2 col-lg-2 col-xxl-12   ">
+                <div class="row">
+                  <div class="logo-sidebar">
+                    <div class="text-nav col-md-12 ">
+                     <a href="#">
+                      <i class="fas fa-pencil-alt"></i> 
+                      <span class="text-title">
+                        B-CASTILLO
+                      </span>
+                    </a>                    
+                    </div>
+                    <div class="img-user col-md-12">
+                        <img src="../public/img/foto.jpg" class="img" alt="">
+                    </div>
+                    <div class="sesion-title ">
+                        <sup class="rol-user"> Educadora</sup>
+                        <span class="name-user"> Bethy Castillo</span>
+                    </div>
+                  </div> 
+                </div>                 
+                <div class="menu">
+                    <ul>
+                        <li class="lista"> <a href=""><i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="lista"> <a href=""><i class="fas fa-user-alt"></i>Perfil</a></li>
+                        <li class="lista"> <a href=""><i class="fab fa-facebook-messenger"></i>Messenger</a></li>
+                       
+                    </ul>
+
+                </div>
+                <div class="close-session">
+                    <span class="mess-session">
+                      Al cerrar sesion, se cerraran en los demas dispositivos
+                    </span> <br>
+                    <i class="fas fa-sign-out-alt"></i>
+                    <br>
+                    <button class="logout">
+                      Cerrar sesion
+                    </button>
+
+                </div>   
+                        
+              </div>
+              <!-- INICIO NAVBAR-->
+              <div class="col-lg-10 col-md-10 col-xl-10 col-10 fila-items">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <div class="row ">
+                    <div class="col-6 col-lg-2 col-sm-6 col-md-6 contenido">
+                      <a href="#"  class="items uno"><i class="fas fa-address-card"></i></a><br>
+                      <span class="items-title">Ingreso de datos</span>
+                    </div>
+                    <div class="col-6 col-lg-2 col-sm-6 col-md-6 contenido">
+                      <a href="#" class="items dos"> <i class="fas fa-calendar-check"></i></a><br>
+                      <span class="items-title">Asistencia</span>
+                    </div>
+                    <div class="col-6 col-lg-2 col-sm-6 col-md-6 contenido">
+                      <a href="#" class="items tres"><i class="fas fa-map-marked-alt"></i></a><br>
+                      <span class="items-title">Hoja de ruta</span>
+                    </div>
+                    <div class="col-6 col-lg-2 col-sm-6 col-md-6 contenido">
+                      <a href="#"  class="items cuatro"> <i class="fas fa-folder-open"></i></a><br>
+                      <span class="items-title">Anexos</span>
+                    </div>
+                    <div class="col-6 col-lg-2 col-sm-6 col-md-6 contenido">
+                      <a href="#" class="items cinco"><i class="fas fa-file-alt"></i></a><br>
+                      <span class="items-title">Informes</span>
+                    </div>
+                    <div class="col-6 col-lg-2 col-sm-2 col-md-6 contenido">
+                      <button class="editar-perfil"> <span class="color-btn"> Editar </span>perfil</button>
+                    </div>
+                    
+                   
+                  </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-12">
+                    <br>
+                    <h2 class="title-content">PAGINA PRINCIPAL</h2>
+                    <div class="row content-card">
+                      <div class="col-lg-12 col-12 col-sm-12 col-md-12">
+                        <div class="row cards">
+                          <div class="col-lg-3 col-sm-6 col-md-6 col-6">
+                            <div class="card c-uno" >
+                              <img src="../public/img/session.svg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <span class="card-text">Anexo 1</span><br>
+                                <button class="report-btn">
+                                  Generar reporte
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-6 col-md-6 col-6">
+                            <div class="card c-dos" >
+                              <img src="../public/img/session.svg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <span class="card-text">anexo 2</span><br>
+                                <button class="report-btn">
+                                  Generar reporte
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-6 col-md-6 col-6">
+                            <div class="card c-tres" >
+                              <img src="../public/img/session.svg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <span class="card-text">anexo 3</span><br>
+                                <button class="report-btn">
+                                  Generar reporte
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-6 col-md-6 col-6">
+                            <div class="card c-cuatro" >
+                              <img src="../public/img/session.svg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <span class="card-text">anexo 4</span><br>
+                                <button class="report-btn">
+                                  Generar reporte
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <br>
+                        <table class="table ">
+                          <thead class="table-table">
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">First</th>
+                              <th scope="col">Last</th>
+                              <th scope="col">Handle</th>
+                              <th scope="col">#</th>
+                              <th scope="col">First</th>
+                              <th scope="col">Last</th>
+                              <th scope="col">Handle</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  
+              </div>
+          </div>
+      
+  </div>
+<!-- SCRIPTS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<script src="../public/jquery/dist/jquery.min.js"></script>
+<script src="../public/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../public/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../public/bootstrap/dist/js/bootstrap.js"></script>
 </body>
+
 </html>

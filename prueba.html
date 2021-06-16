@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba ajax</title>
+</head>
+<body>
+    <button onclick="sendRequest()">
+        enviar peticion
+    </button>   
+    
+    <h3 id="titulo"> </h3>
+    <script>
+        //Pedir datos al backend con ajax
+        function sendRequest(){
+            var objeto = new XMLHttpRequest();
+            objeto.open('GET','prueba.php', true);
+            objeto.setRequestHeader('Content-Type', 'application/x-ww-form-urlencode');
+            objeto.onreadystatechange = function(){
+                document.getElementById('titulo').innerHTML = objeto.responseText;
+            }
+            objeto.send();
+        }
+    </script>
+</body>
+</html>
